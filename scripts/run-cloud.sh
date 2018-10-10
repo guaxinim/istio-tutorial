@@ -1,5 +1,2 @@
 #!/bin/bash
-while true
-do curl customer-tutorial.apps.brasilia1.openshiftworkshop.com
-sleep .5
-done
+ab -n 4000 -c 20 http://customer-tutorial.apps.brasilia1.openshiftworkshop.com/
